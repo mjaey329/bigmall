@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: db, admin
+  messages:
+    encoding: UTF-8
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root:  ERROR
+    org.springframework:  ERROR
+    org.mybatis:  ERROR
+    com.dingmj.bigmall.db:  ERROR
+    com.dingmj.bigmall.admin:  ERROR
+    com.dingmj.bigmall:  ERROR

@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: db
+  messages:
+    encoding: UTF-8
+logging:
+  level:
+    root: ERROR
+    com.dingmj.bigmall.db: DEBUG
+    org.mybatis: ERROR
+    org.springframework: ERROR
+
+

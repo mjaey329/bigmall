@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bigmall.iml" filepath="$PROJECT_DIR$/bigmall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigmall-admin-api/bigmall-admin-api.iml" filepath="$PROJECT_DIR$/bigmall-admin-api/bigmall-admin-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigmall-all/bigmall-all.iml" filepath="$PROJECT_DIR$/bigmall-all/bigmall-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigmall-core/bigmall-core.iml" filepath="$PROJECT_DIR$/bigmall-core/bigmall-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigmall-db/bigmall-db.iml" filepath="$PROJECT_DIR$/bigmall-db/bigmall-db.iml" />
+    </modules>
+  </component>
+</project>
