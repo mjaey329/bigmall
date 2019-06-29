@@ -21,6 +21,12 @@
 			<groupId>com.dingmj</groupId>
 			<artifactId>bigmall-admin-api</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>com.dingmj</groupId>
+			<artifactId>bigmall-core</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>

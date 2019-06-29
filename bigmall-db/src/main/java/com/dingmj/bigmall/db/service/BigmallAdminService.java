@@ -61,6 +61,12 @@ public class BigmallAdminService {
         return adminMapper.updateByPrimaryKeySelective(admin);
     }
 
+    public void add(BigmallAdmin admin){
+        admin.setAddTime(LocalDateTime.now());
+        admin.setUpdateTime(LocalDateTime.now());
+        adminMapper.insertSelective(admin);
+    }
+
     public void deleteById(Integer id){
         adminMapper.logicalDeleteByPrimaryKey(id);
     }
