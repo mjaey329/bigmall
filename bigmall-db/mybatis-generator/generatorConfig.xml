@@ -74,6 +74,13 @@
             <generatedKey column="id" sqlStatement="Mysql" identity="true" />
         </table>
 
+        <table tableName="bigmall_log">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="bigmall_brand">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+        </table>
 
 
     </context>

@@ -1,8 +1,7 @@
 package com.dingmj.bigmall.core.util;
 
 import com.github.pagehelper.Page;
-import com.sun.org.apache.regexp.internal.RE;
-import org.omg.CORBA.DATA_CONVERSION;
+
 
 import java.util.HashMap;
 import java.util.List;
@@ -86,5 +85,13 @@ public class ResponseUtil {
 
     public static Object badArgument(){
         return fail(401,"参数不对");
+    }
+
+    public static Object unauthz(){return fail(506,"无操作权限");}
+
+    public static Object unlogin(){return fail(501,"请登录");}
+
+    public static Object updateDataFailed(){
+        return fail(505,"更新数据失败");
     }
 }
