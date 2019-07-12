@@ -82,6 +82,10 @@
             <generatedKey column="id" sqlStatement="Mysql" identity="true" />
         </table>
 
+        <table tableName="bigmall_category">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+        </table>
+
 
     </context>
 

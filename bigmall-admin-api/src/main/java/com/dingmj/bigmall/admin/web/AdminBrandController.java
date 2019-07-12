@@ -4,7 +4,6 @@ import com.dingmj.bigmall.admin.annotation.RequiresPermissionsDesc;
 import com.dingmj.bigmall.core.util.ResponseUtil;
 import com.dingmj.bigmall.core.validator.Order;
 import com.dingmj.bigmall.core.validator.Sort;
-import com.dingmj.bigmall.db.dao.BigmallAdminMapper;
 import com.dingmj.bigmall.db.domain.BigmallBrand;
 import com.dingmj.bigmall.db.service.BigmallBrandService;
 import org.apache.commons.logging.Log;
@@ -12,7 +11,6 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
-import org.springframework.validation.ObjectError;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 

@@ -11,7 +11,6 @@ import org.springframework.util.StringUtils;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static com.dingmj.bigmall.db.domain.BigmallBrand.*;
 
 /**
  * @author DMJ
@@ -20,7 +19,7 @@ import static com.dingmj.bigmall.db.domain.BigmallBrand.*;
 @Service
 public class BigmallBrandService {
 
-    private final Column[] result = new Column[]{Column.id,Column.name, Column.desc, Column.picUrl, Column.floorPrice};
+    private final BigmallBrand.Column[] result = {BigmallBrand.Column.id,BigmallBrand.Column.name, BigmallBrand.Column.desc, BigmallBrand.Column.picUrl, BigmallBrand.Column.floorPrice};
 
     @Autowired
     private BigmallBrandMapper brandMapper;
@@ -58,7 +57,7 @@ public class BigmallBrandService {
         return brandMapper.selectByExample(example);
     }
 
-    public List<BigmallBrand> query(Integer page,Integer limit){
+    public List<BigmallBrand> query(Integer page, Integer limit){
         return query(page,limit,null,null);
     }
 
@@ -69,6 +68,7 @@ public class BigmallBrandService {
     public int updateById(BigmallBrand brand){
         brand.setUpdateTime(LocalDateTime.now());
         return brandMapper.updateByPrimaryKeySelective(brand);
+
     }
 
     public void deleteById(Integer id){
